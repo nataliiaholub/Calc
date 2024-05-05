@@ -29,6 +29,9 @@ public class Calculator {
             double operand1 = Double.parseDouble(args[0]);
             char operator = args[1].charAt(0);
             double operand2 = Double.parseDouble(args[2]);
+
+            double result = calculate(operand1, operand2, operator);
+            System.out.println("Result: " + result);
         } catch (NumberFormatException e) {
             System.out.println("Invalid number. Please provide numeric values.");
             System.exit(1);
